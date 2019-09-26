@@ -3,3 +3,6 @@ language: java
 jdk:
   - openjdk8
 
+install: cd /home/travis/build/aliyanyan/springcloud-config && mvn install -DskipTests=true -Dmaven.javadoc.skip=true
+
+script: mvn test
